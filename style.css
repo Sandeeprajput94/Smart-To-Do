@@ -208,9 +208,72 @@ font-size: 26px;
      font-size: 20px;
      padding: 12px 12px;
      }
+     /* Tablet & Medium Screens */
 @media (min-width: 601px) and (max-width: 1024px) {
+  .container {
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+  }
+  .title-row h1 {
+    font-size: 40px;
+  }
+  .subtitle {
+    font-size: 20px;
+  }
+  #taskInput {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .task-filters {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
 }
 @media (max-width: 600px) {
-}
-@media (max-width: 380px) {
+  body {
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  .container {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 16px;
+    margin: 0 auto;
+  }
+  .title-row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  .check-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+  .title-row h1 {
+    font-size: 32px;
+    line-height: 1.1;
+  }
+  .subtitle {
+    font-size: 17px;
+    margin: 8px 0 18px 40px;
+  }
+  #taskInput {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  #addTaskPlusBtn {
+    width: 45px;
+    height: 45px;
+    font-size: 24px;
+    flex-shrink: 0;
+  }
+  .task-filters {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
 }
